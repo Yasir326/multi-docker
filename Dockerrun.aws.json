@@ -4,19 +4,19 @@
 			"name": "client",
 			"image": "yasir326/multi-client",
 			"hostname": "client",
-			"essential": false,
+			"essential": false
 		},
 		{
 			"name": "server",
 			"image": "yasir326/multi-server",
 			"hostname": "api",
-			"essential": false,
+			"essential": false
 
 		},
 		{
 			"name": "worker",
 			"image": "yasir326/multi-worker",
-			"essential": false,
+			"essential": false
 		},
 		{
 			"name": "nginx",
