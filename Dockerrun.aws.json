@@ -1,6 +1,7 @@
 {
 	"AWSEBDockerrunVersion": 2,
-	"containerDefinitions": [{
+	"containerDefinitions": [
+		{
 			"name": "client",
 			"image": "yasir326/multi-client",
 			"hostname": "client",
@@ -18,12 +19,14 @@
 		{
 			"name": "worker",
 			"image": "yasir326/multi-worker",
+			"hostname": "worker",
 			"essential": false,
 			"memory": 128
 		},
 		{
 			"name": "nginx",
 			"image": "yasir326/multi-nginx",
+			"hostname": "nginx",
 			"essential": true,
 			"portMappings": [{
 				"hostport": 80,
